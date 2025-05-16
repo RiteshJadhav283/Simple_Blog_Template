@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>My Simple Blog</h1>
+  </header>
+
+  <main>
+    <section class="posts">
+      <div class="post">
+        <h2>First Blog Post</h2>
+        <p>This is a short summary of the first post.</p>
+        <button onclick="openModal('First Blog Post', 'This is the full content of the first blog post.')">Read More</button>
+      </div>
+
+      <div class="post">
+        <h2>Second Blog Post</h2>
+        <p>This is a short summary of the second post.</p>
+        <button onclick="openModal('Second Blog Post', 'This is the full content of the second blog post.')">Read More</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
